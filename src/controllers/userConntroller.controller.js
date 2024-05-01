@@ -21,7 +21,7 @@ const createUser =async(req, res, next)=>{
 
 const updateUser =async(req, res, next)=>{
     try {
-        const userId  = req.params;
+        const userId  = req.params.id;
         console.log('id : ',req.params);
         
         const userdata = req.body;
